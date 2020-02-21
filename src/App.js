@@ -26,6 +26,17 @@ clear = () => {
   })
 }
 
+double = () => {
+  this.setState ({
+    count: this.state.count + 2
+  })
+}
+divide = () => {
+    this.setState ({
+    count: this.state.count - 2
+    })
+}
+
 
   render() {
     return (
@@ -37,8 +48,11 @@ clear = () => {
       <button type = "button" onClick={this.increment}>Increment</button>
       <button type = "button" onClick={this.decrement}>Decrement</button>
       <button type = "button" onClick={this.clear}>Clear</button>
+      <button type = "button" onClick={this.double}>Double Increment</button>
+      <button type = "button" onClick={this.divide}>Double Decrement </button>
       </div>
       </div>
+
 
 
     )
